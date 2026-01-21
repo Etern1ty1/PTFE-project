@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PTFE Turning Process Optimization Project</title>
+
+  <style>
+    :root {
+      --primary: #0b3c5d;
+      --secondary: #328cc1;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --text-main: #222;
+      --text-sub: #555;
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: var(--text-sub);
+    }
+
+    section {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 30px;
+      margin-bottom: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-bottom: 16px;
+      border-left: 5px solid var(--secondary);
+      padding-left: 12px;
+    }
+
+    section h3 {
+      font-size: 1.2rem;
+      color: var(--secondary);
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .info-item {
+      background: #f0f4f8;
+      border-radius: 10px;
+      padding: 14px;
+      font-size: 0.95rem;
+    }
+
+    .project-img {
+      width: 100%;
+      max-width: 720px;
+      display: block;
+      margin: 18px auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .img-caption {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 6px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      margin: 40px 0 10px;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <header>
+    <h1>PTFE Turning Process Optimization</h1>
+    <p>Chip Formation Mechanism · Precision Cutting Algorithm · Engineering Implementation</p>
+  </header>
+
+  <section>
+    <h2>Personal Information</h2>
+    <div class="info-grid">
+      <div class="info-item"><strong>Name:</strong> Jinda Liao</div>
+      <div class="info-item"><strong>University:</strong> Hangzhou Dianzi University</div>
+      <div class="info-item"><strong>Major:</strong> Intelligent Manufacturing Engineering</div>
+      <div class="info-item"><strong>GPA:</strong> 4.22 / 5.0 (Rank 23 / 137)</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Project Overview</h2>
+    <p><strong>Project Title:</strong> Development of Negative-Pressure Chip Removal Technology and Precision Cutting Algorithms for PTFE Turning</p>
+    <p><strong>Duration:</strong> December 2022 – December 2024</p>
+  </section>
+
+  <section>
+    <h2>Research Background & Motivation</h2>
+    <p>
+      Polytetrafluoroethylene (PTFE) is a representative polymer material widely used
+      in aerospace, chemical engineering, and precision manufacturing due to its
+      excellent chemical stability, low friction coefficient, and high temperature
+      resistance. However, compared with metallic materials, PTFE exhibits strong
+      temperature sensitivity and significant elastic deformation during machining,
+      which poses substantial challenges for achieving high-precision turning.
+    </p>
+
+    <figure>
+	<img src="images/ptfe_bellows.png"
+		alt="PTFE bellows used in precision engineering applications"
+        	class="project-img">
+	<figcaption class="img-caption">
+      		Typical PTFE bellows component used in precision and aerospace applications.
+	</figcaption>
+    </figure>
+
+    <p>
+      In practical PTFE machining, unstable chip formation and chip entanglement
+      frequently lead to surface defects, dimensional inaccuracies, and reduced
+      machining efficiency. Traditional cutting theories developed for metals fail
+      to accurately predict the minimum uncut chip thickness of PTFE, motivating
+      this project to establish a dedicated theoretical and engineering framework
+      for polymer precision machining.
+    </p>
+  </section>
+
+  <section>
+    <h2>Research Objectives</h2>
+    <ul>
+      <li>Investigate the chip formation mechanism of PTFE under various cutting parameters</li>
+      <li>Establish a temperature-aware minimum uncut chip thickness model</li>
+      <li>Compensate elastic deformation to improve cutting accuracy</li>
+      <li>Design a negative-pressure chip removal device for stable machining</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Methodology & Technical Approach</h2>
+
+    <h3>Chip Formation Analysis</h3>
+    <p>
+      An orthogonal cutting experimental platform was constructed to collect cutting
+      force signals in real time. PTFE chips generated under different cutting
+      conditions were observed using a VHX-700F digital microscope and scanning
+      electron microscopy (SEM). Fractal dimension analysis was applied to quantify
+      chip morphology characteristics.
+    </p>
+
+    <h3>Minimum Uncut Chip Thickness Modeling</h3>
+    <p>
+      Based on experimental observations, a PTFE-specific minimum uncut chip
+      thickness theory was established. A temperature-dependent Johnson–Cook
+      constitutive model was introduced to account for surface stress variations and
+      elastic recovery during cutting.
+    </p>
+  </section>
+
+  <section>
+    <h2>Key Innovations</h2>
+    <ul>
+      <li>
+        <strong>Temperature-dependent cutting model:</strong>
+        Introduced temperature terms into the Johnson–Cook model to improve accuracy
+        for polymer machining.
+      </li>
+      <li>
+        <strong>Elastic deformation compensation:</strong>
+        Quantified elastic recovery after tool unloading to correct actual cutting
+        depth.
+      </li>
+      <li>
+        <strong>Theory–engineering integration:</strong>
+        Combined cutting theory with a negative-pressure chip removal device.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Engineering Implementation</h2>
+    <p>
+      A performance monitoring and control system was developed using an STM32
+      microcontroller and Python-based upper-computer software. The system supports
+      real-time sensor data acquisition, dynamic visualization, and motor control
+      for mechanical positioning.
+    </p>
+
+    <figure>
+    	<img src="images/software_ui.png"
+         	 alt="Software user interface for real-time monitoring and control"
+         	 class="project-img">
+    	<figcaption class="img-caption">
+      		Python-based upper-computer software interface for real-time data visualization
+      		and motor control.
+    	</figcaption>
+  </figure>
+
+    <p>
+      Additionally, a negative-pressure chip removal device consisting of a visual
+      inspection camera, air nozzles, vacuum generator, and chip suction module was
+      designed and experimentally validated, significantly improving machining
+      stability.
+    </p>
+
+    <figure>
+    	<img src="images/cutting_model.png"
+         	 alt="the model of negative-pressure chip removal device"
+         	 class="project-img">
+    	<figcaption class="img-caption">
+      		Modeling the negative-pressure chip removal device in Solid Works.
+    	</figcaption>
+      </figure>
+
+  </section>
+
+  <section>
+    <h2>Outcomes</h2>
+    <ul>
+      <li>
+      	<strong>SCI Journal Publication (2024)</strong><br>
+      	Numerical Cutting Simulation and Experimental Investigations on Determining
+      	the Minimum Uncut Chip Thickness of PTFE
+      	<br>
+      	<a href="https://doi.org/10.1007/s12541-024-01034-3"
+             target="_blank"
+             rel="noopener noreferrer">
+             🔗 View the SCI paper
+      	</a>
+      </li>
+
+      <li>
+        <strong>Chinese National Invention Patent (First Author)</strong>
+        <figure>
+          <img src="images/patent.png" 
+		   alt="Chinese invention patent certificate" 
+		   class="project-img">
+          <figcaption class="img-caption">
+            Patent certificate: Method for determining PTFE cutting thickness.
+          </figcaption>
+        </figure>
+      </li>
+
+      <li>
+      	<strong>National Software Copyright</strong>
+      	<figure>
+        	<img src="images/software_copyright.png"
+             		 alt="National software copyright certificate"
+             		 class="project-img">
+        	<figcaption class="img-caption">
+          	   Software copyright: Real-time spring performance monitoring system.
+        	</figcaption>
+      	</figure>
+    </li>
+
+      <li>Bronze Award – Zhejiang “Challenge Cup” Entrepreneurship Competition</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Research Impact</h2>
+    <p>
+      This project establishes a comprehensive PTFE turning framework integrating
+      cutting mechanism analysis, algorithm optimization, and engineering device
+      design. The proposed methodology provides practical guidance for high-precision
+      machining of temperature-sensitive polymer materials and demonstrates strong
+      applicability to intelligent manufacturing systems.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Jinda Liao · PTFE Intelligent Manufacturing Research Project
+  </footer>
+
+</div>
+</body>
+</html>
